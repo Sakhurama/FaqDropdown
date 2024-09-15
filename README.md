@@ -1,7 +1,7 @@
 # Watch my project
 
 This was an exercise to practice and reforce skills in Html, Css and Javascript
-Watch the result here: <a href="https://sakhurama.github.io/FaqDropdown/" target="_blank">**✨Watch project here✨**</a>
+Watch the result here: <a href="https://sakhurama.github.io/FaqDropdown/" target="blank">**✨Watch project here✨**</a>
 ## Frontend Mentor - FAQ accordion
 
 ![Design preview for the FAQ accordion coding challenge](./design/desktop-preview.jpg)
