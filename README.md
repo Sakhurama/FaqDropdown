@@ -1,4 +1,8 @@
-# Frontend Mentor - FAQ accordion
+# Watch my project
+
+This was an exercise to practice and reforce habilities in Html, Css and Javascript
+Watch the result here: <a href="https://sakhurama.github.io/FaqDropdown/" target="_blank">**✨Clic here please✨**</a>
+## Frontend Mentor - FAQ accordion
 
 ![Design preview for the FAQ accordion coding challenge](./design/desktop-preview.jpg)
 
