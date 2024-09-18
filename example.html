@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .faq-container {
+            margin-top: 20px;
+        }
+        .faq-question {
+            margin-bottom: 2px;
+            background-color: #f1f1f1;
+            color: #333;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            transition: 0.4s;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .faq-question:hover {
+            background-color: #ddd;
+        }
+        .faq-question:after {
+            content: '\02795';
+            font-size: 13px;
+            color: #777;
+            float: right;
+            margin-left: 5px;
+        }
+        .faq-question.active:after {
+            content: "\2796";
+        }
+        .faq-answer {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <h1>Preguntas Frecuentes</h1>
+    <div class="faq-container">
+        <button class="faq-question">¿Cuál es el horario de atención?</button>
+        <div class="faq-answer">
+            <p>Nuestro horario de atención es de lunes a viernes de 9:00 AM a 6:00 PM.</p>
+        </div>
+
+        <button class="faq-question">¿Cómo puedo contactarlos?</button>
+        <div class="faq-answer">
+            <p>Puede contactarnos por teléfono al 123-456-7890 o por correo electrónico a info@ejemplo.com.</p>
+        </div>
+
+        <button class="faq-question">¿Cuál es su política de devoluciones?</button>
+        <div class="faq-answer">
+            <p>Aceptamos devoluciones dentro de los 30 días posteriores a la compra, siempre que el producto esté en su estado original.</p>
+        </div>
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll('.faq-question');
+
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                question.classList.toggle('active');
+                const answer = question.nextElementSibling;
+                if (answer.style.maxHeight) {
+                    answer.style.maxHeight = null;
+                } else {
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
