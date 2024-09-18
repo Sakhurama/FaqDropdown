@@ -53,6 +53,9 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 600px;
+    height: 450px;
+    overflow: auto;
+    scrollbar-color: #B423E8 #FAEEFF;
     padding: 20px 40px;
     background-color: white;
     border-radius: 20px;
@@ -121,11 +124,6 @@ main {
     .card {
         width: 340px;
         overflow: hidden;
-    }
-
-    .question-container {
-        padding-top: 20px;
-        padding-bottom: 15px;
     }
 
     .question{
